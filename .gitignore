@@ -218,3 +218,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# AWS Databricks Fraud Detection project
+
+# Local datasets - never commit raw or processed data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Environment and credentials
+.env.*
+!.env.example
+.aws/
+
+# Local Spark output
+spark-warehouse/
+metastore_db/
+derby.log
